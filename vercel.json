@@ -1,0 +1,9 @@
+{
+  "version": 2,
+  "builds": [
+    { "src": "api/generate_gif.py", "use": "@vercel/python" }
+  ],
+  "routes": [
+    { "src": "/generate_gif", "dest": "/api/generate_gif.py" }
+  ]
+}
